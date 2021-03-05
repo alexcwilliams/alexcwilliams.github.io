@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+ 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if !mso]><!-- -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="apple-touch-icon" href="https://trendline.email/documentation/bandon/apple-touch-icon.png">	
+
+
+<title>Bandon Classic</title>
+
+<style type="text/css">
+.ExternalClass { width:100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+table td p { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; padding: 0; margin: 0; color: black; line-height: 100%; }
+.applelinks a { text-decoration: none; color: inherit !important; }
+a { color: black; text-decoration: none; }
+a, a:link, a:visited { color: inherit; text-decoration: none; }
+span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+img { border: 0px !important; }
+
+body {
+ font-family: Helvetica, Arial, sans-serif;
+ font-size: 19px;
+ -webkit-text-size-adjust: none;
+ -ms-text-size-adjust: none;
+ -webkit-font-smoothing: antialiased;
+ margin: 0;
+ padding: 0;
+ width: 100% !important;
+}
+
+.ow100 { width: 100% !important;}
+.opadticon { padding-top: 80px !important;}
+.oborderl0 { border-left: 0px !important; }
+.oborderr0 { border-right: 0px !important; }
+.button:hover { background-color: rgba(0,0,0,0.1) !important;}
+.link:hover { text-decoration: underline !important;}
+
+
+.backgroundimg  {
+animation: background 10s infinite; 
+-webkit-animation: background 10s infinite;  	
+-webkit-animation-fill-mode: forwards !important;
+animation-fill-mode: forwards !important;
+	}
+
+@-webkit-keyframes background {
+0%   { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+10%  { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+20%  { background-image: url(https://images.trendline.email/mts/trendline/BD-2.jpg); }
+30%  { background-image: url(https://images.trendline.email/mts/trendline/BD-2.jpg); }
+40%  { background-image: url(https://images.trendline.email/mts/trendline/BD-3.jpg); }
+50%  { background-image: url(https://images.trendline.email/mts/trendline/BD-3.jpg); }
+60%  { background-image: url(https://images.trendline.email/mts/trendline/BD-4.jpg); }
+70%  { background-image: url(https://images.trendline.email/mts/trendline/BD-4.jpg); }
+80%  { background-image: url(https://images.trendline.email/mts/trendline/BD-5.jpg); }
+90%  { background-image: url(https://images.trendline.email/mts/trendline/BD-5.jpg); }
+100% { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+}
+@keyframes background {
+0%   { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+10%  { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+20%  { background-image: url(https://images.trendline.email/mts/trendline/BD-2.jpg); }
+30%  { background-image: url(https://images.trendline.email/mts/trendline/BD-2.jpg); }
+40%  { background-image: url(https://images.trendline.email/mts/trendline/BD-3.jpg); }
+50%  { background-image: url(https://images.trendline.email/mts/trendline/BD-3.jpg); }
+60%  { background-image: url(https://images.trendline.email/mts/trendline/BD-4.jpg); }
+70%  { background-image: url(https://images.trendline.email/mts/trendline/BD-4.jpg); }
+80%  { background-image: url(https://images.trendline.email/mts/trendline/BD-5.jpg); }
+90%  { background-image: url(https://images.trendline.email/mts/trendline/BD-5.jpg); }
+100% { background-image: url(https://images.trendline.email/mts/trendline/BD-1.jpg); }
+}
+
+@media all {
+.museosans { font-family: 'Museo Sans', Arial, sans-serif !important; }
+}
+	
+@media all {
+.publico { font-family: 'Publico', Georgia, serif !important; }
+}
+
+@media only screen and (max-width: 480px) {
+.w100m, .column50, .column33, .column25, .column75 { width: 100% !important;}
+.w95m { width: 95% !important;}
+.w90m { width: 90% !important;}
+.wicon { width: 45% !important;}
+.expandm { width: 100% !important; display: block !important; }
+.resizem { width: 100% !important; height: auto !important; }
+.hidem { display: none !important; }
+.h1m { font-size: 19px !important;}
+.h2m { font-size: 14px !important;}
+.h3m { font-size: 13px !important;}
+.centerm { text-align: center !important; }
+.leftm { text-align: left !important; }
+.logo { width: 120px !important; height: auto !important; }
+.borderl0m { border-left: 0px !important; }
+.borderr0m { border-right: 0px !important; }
+.borderb0m { border-bottom: 0px !important; }
+.bordertm { border-top: 1px solid #cbcbcb !important; }
+.darkm { background-color: rgba(0,0,0,0.2) !important; }
+.opadticon { padding-top: 70px !important;}
+.nopadtm { padding-top: 0px !important; }
+.padt5m { padding-top: 5px !important; }
+.padt10m { padding-top: 10px !important; }
+.padt20m { padding-top: 20px !important; }
+.nopadbm { padding-bottom: 0px !important; }
+.padb10m { padding-bottom: 10px !important;}
+.padb20m { padding-bottom: 20px !important;}
+}
+
+@media only screen and (max-width: 711px) {
+.w100 { width: 100% !important;}
+.w90 { width: 90% !important;}
+.minwidth { min-width: 100% !important;}
+.hide { display: none !important; }
+.resize { width: 100% !important; height: auto !important; }
+.resize img { max-width: 100% !important; height: auto !important; }
+.resize a { width: auto !important; height: auto !important; }
+.expand { width: 100% !important; display: block !important; }
+.height0 { height: 0 !important; }
+.column50 { width: 50%;}
+.column33 { width: 33%;}
+.column25 { width: 25%;}
+.column75 { width: 75%;}
+.nopadt { padding-top: 0px !important; }
+.padt5 { padding-top: 5px !important; }
+.padt10 { padding-top: 10px !important; }
+.padt20 { padding-top: 20px !important; }
+.padb10 { padding-bottom: 10px !important;}
+.padb20 { padding-bottom: 20px !important;}
+}
+
+	@font-face{ 
+font-family: 'Museo Sans';
+src: url('https://images.trendline.email/mts/tlifnt/circular-book.woff');
+}
+	
+@font-face{ 
+font-family: 'Publico';
+src: url('https://images.trendline.email/mts/tlifnt/circular-black.woff');
+}
+	
+</style>
+
+<!--[if gte mso 9]>
+<style type="text/css">
+body {
+	margin: 0 !important;
+    padding: 0 !important;
+    }
+    
+table,td,div,p {
+	font-family: Helvetica, Arial, sans-serif;
+    line-height: normal;
+    }
+</style>
+<![endif]-->
+<!--[if lte mso 7]>
+<style type="text/css">
+body {
+	margin: 0 !important;
+    padding: 0 !important;
+    }
+    
+table,td,div,p {
+	font-family: Helvetica, Arial, sans-serif;
+    line-height: normal;
+    }
+</style>
+<![endif]-->
+
+
+	
+</head>
+
+<body style="-webkit-text-size-adjust: none;-ms-text-size-adjust: none; margin: 0; padding: 0; width: 100%; background-color: #f5f5f5;">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
+    <tr>
+      <td class="minwidth" align="center" style="min-width: 711px; background-color: #f5f5f5;">
+      	<table class="ow100" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+      
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" style="overflow: hidden;">
+      	<table class="ow100" border="0" align="center" cellpadding="0" cellspacing="0">
+    <td class="oborderl0 oborderr0" style="background-color: white; border: 1px solid #cbcbcb;">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: -1px;">
+    <tr>
+      <td class="backgroundimg" background="https://images.trendline.email/mts/trendline/BD-1.jpg" align="center" style="background-size: cover; background-position: middle center; background-repeat: no-repeat; background-color: #fa114f;">
+      
+	<div>
+      	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="padb10m darkm" align="center" style="padding-top: 45px; padding-bottom: 45px;">
+      	<table class="w100" align="center" width="645" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center"><img src="https://images.trendline.email/mts/trendline/bandonclassic-white.png" width="150" alt="Airbnb" style="display: block; border: 0; color: white; font-size: 20px; font-family: sans-serif; font-weight: bold;" class="logo"/></td>
+  </tr>
+  <tr>
+      <td class="padt20m padb20m" style="padding-top: 20px; padding-bottom: 45px;">
+      	<table class="padt20m padb20m" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="h1m publico" style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 32px; text-align: center; line-height: 1.3em; font-weight: bold;">Gentlemen, Start Your Engines. <br />
+      It's Time for Bandon.</td>
+    </tr>
+
+</table>
+      </td>
+  </tr>
+</table>
+      </td>
+  </tr>
+</table>
+      </td>
+    </tr>
+</table>
+	</div>
+<!--[if gte mso 9]>
+    </v:textbox>
+  </v:rect>
+  <![endif]-->
+  
+      </td>
+    </tr>
+    <tr>
+      <td class="padt10m padb10m" align="center" style="padding-top: 20px; padding-bottom: 20px; background-color: white; ">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="h2m publico" style="font-family: Helvetica, Arial, sans-serif; color: #35353a; font-size: 24px; text-align: center; font-weight: bold;">Itinerary for the 2021 Bandon Classic</td>
+  </tr>
+</table>
+      </td>
+    </tr>
+			
+
+</table>
+    </td>
+</table>
+      </td>
+    </tr>
+</table>
+
+
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="nopadtm" align="center">
+      	<table class="w100" align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" style="background: rgb(63,94,251);
+background: -moz-linear-gradient(11deg, rgba(63,94,251,1) 0%, rgba(181,43,70,1) 100%);
+background: -webkit-linear-gradient(11deg, rgba(63,94,251,1) 0%, rgba(181,43,70,1) 100%);
+background: linear-gradient(11deg, rgba(63,94,251,1) 0%, rgba(181,43,70,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#b52b46",GradientType=1);">
+      	<table align="center" width="640" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center">
+      	<table width="90%" border="0" cellspacing="0" cellpadding="0" class="w95m">
+			
+<!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: center; font-size: 19px; color: white;"><b>Jump:</b> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: white; text-align: left;" class="h2m museosans"><a href="#Saturday" style="Color: white; text-decoration: underline;">Saturday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Sunday" style="Color: white; text-decoration: underline;">Sunday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Monday" style="Color: white; text-decoration: underline;">Monday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Tuesday" style="Color: white; text-decoration: underline;">Tuesday</a></td>
+</tr>
+<!-- Bulleted List End /// -->
+			
+    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/punchbowl"><img src="pb.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Friday </td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:10px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">4:30</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Punch Bowl</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">6:30</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Check In &nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+        
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+			    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w95m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	 	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/sheep-ranch" id="Saturday"><img src="sheep.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Saturday AM</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">10:50</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Steve/Mike vs Alex/Ryan</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">11:00</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Eric/Todd vs Jeff/Josh</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+        
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+			
+						    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	 	 	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes"><img src="bandunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Saturday PM</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+     
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">8:00</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Night Golf at Bandon Dunes</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+        
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+			    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+     <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/old-macdonald" id="Sunday"><img src="oldmac.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Sunday AM</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">8:20</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Eric/<span class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Steve</span> vs. <span class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Ryan/Josh</span></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0"class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">8:30</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Mike/Todd vs. Al/Jeff</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+           
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table> 	
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+						    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+     <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/old-macdonald"><img src="oldmac.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Sunday PM</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+
+
+
+
+
+           <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">2:10</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;"><span class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Mike/Eric vs. Al/Josh</span></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->   
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">2:20</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Todd/Steve vs. Ryan/Jeff</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table> 	
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+						    <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/pacific-dunes" id="Monday"><img src="pacdunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday AM </td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">8:30</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Eric/Steve vs. Al/Jeff</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">8:40</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Mike/Todd vs. Ryan/Josh</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+        
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+			 <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/preserve"><img src="preserve.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday PM</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">3:30</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">8 Man Par 3 Tournament</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      
+
+        
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+						 <!-- /// Mod /// --> 
+			<tr>
+      <td class="opadticon" style="padding-top: 20px; padding-bottom: 20px;">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w90m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+    <tr>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/sheep-ranch" id="Tuesday"><img src="sheep.png" width="110"  style="display: block; border: 0; margin-top: -70px;"/></a></td>
+    </tr>
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Tuesday AM </td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" style="padding-top: 10px; padding-left:20px;">
+    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
+
+     
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">&nbsp;&nbsp;9:50</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Mike/Steve vs. Al/Josh</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+
+
+
+      <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">10:00</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Eric/Todd vs. Jeff/Ryan</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+
+            <!-- List Item Start -->
+      <tr>
+        <td style="padding-top: 10px;">
+          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
+            <tr>
+              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 19px; color: #e47a47; text-align: right; font-weight: bold;">&nbsp;&nbsp;2:00</td>
+              <td class="h2m museosans" style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Lunch and Out </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- List Item End -->
+  
+
+    </table>
+  </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+			
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+			
+			    <!-- /// Mod /// --> 
+			<tr>
+      <td style="padding-top: 20px; ">
+      	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" class="w95m">
+    <tr>
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m">
+
+    <tr>
+      <td class="h2m publico" style="font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Rules</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: Left; font-size: 19px;  "><b>$50 Entry Fee </b><span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans"> Paypal  sjfoerstner@gmail.com </span></td>
+</tr>
+<!-- Bulleted List End /// -->
+			<!-- /// Bulleted List Start -->
+<tr>
+  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: Left; font-size: 19px;"><b>Best Ball Team Match Play</b> 
+    <span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">at Sheep (1), Old Mac, Bandon Dunes, Pacific Dunes - 1 point per hole - No Carryover Holes</span> </td>
+</tr>
+<!-- Bulleted List End /// -->
+
+				<!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: left; font-size: 19px;"><b>Total team score after Pacfic Dunes </b> 
+    <span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">Wins $100 to each winning team member </span> </td>
+</tr>
+<!-- Bulleted List End /// -->
+						<!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: left; font-size: 19px;"><i><span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">Any scoring disputes go through Jeff &amp; Eric </span></i></td>
+</tr>
+<!-- Bulleted List End /// -->
+
+
+</table>
+		  
+		  <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m">
+
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px;font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Teams</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: center; font-size: 19px;"><b>Fangers:</b> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">Eric, Mike, Steve</span>, Todd</td>
+</tr>
+<!-- Bulleted List End /// -->
+			  
+			  <!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: center; font-size: 19px;"><b>Bangers:</b> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">Alex, Jeff, Josh, Ryan</span></td>
+</tr>
+
+
+
+</table>
+		  
+		  		  <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m" >
+
+    <tr>
+      <td class="h2m publico" style="padding-top: 20px;font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Roomates</td>
+    </tr>
+<!-- /// Bulleted List Start -->
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: center; font-size: 19px;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; line-height: 1.3em; color: #38383C; text-align: left;" class="h2m museosans">Ryan/Todd, Mike/Jeff, Eric/Alex, Josh/Steve </span></td>
+</tr>
+<!-- Bulleted List End /// -->
+			  
+
+
+
+
+</table>
+      </td>
+    </tr>
+</table>
+      </td>
+    </tr>
+			<!-- /// Mod /// --> 
+
+</table>
+      </td>
+  </tr>
+</table>
+      </td>
+  </tr>
+</table>
+      </td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+    </tr>
+</table>
+      </td>
+  </tr>
+</table>
+
+
+
+
+
+
+<!-- Disable Gmail App Mobile Friendly Button -->
+<div style="display: none; white-space: nowrap; font: 15px courier; line-height: 0;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+</div>
+
+</body>
+</html>
