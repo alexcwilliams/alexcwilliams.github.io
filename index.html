@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.io/main/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/apple-touch-icon.png">
 
 
 
@@ -39,15 +39,34 @@ body {
 .opadticon { padding-top: 80px !important;}
 .oborderl0 { border-left: 0px !important; }
 .oborderr0 { border-right: 0px !important; }
-.button:hover { background-color: rgba(0,0,0,0.1) !important;}
+.button:hover { background-color:#3f5bf1 !important;}
 .link:hover { text-decoration: underline !important;}
 
 @media all {
-.museosans { font-family: 'Museo Sans', Arial, sans-serif !important; }
+  .shadow1 { box-shadow: 0px 0px 20px rgba(0,0,0,0.3); }
+  .shadow2 { box-shadow: 0px 1px 3px rgba(0,0,0,0.1); }	
 }
 
 @media all {
-.publico { font-family: 'Publico', Georgia, serif !important; }
+	@font-face{
+font-family: 'Circular';
+src: url('https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/circular-book.woff'); font-weight: 400; }
+
+@font-face{
+font-family: 'Circular';
+src: url('https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/circular-light.woff'); font-weight: 300; }
+
+
+@font-face{
+font-family: 'Circular';
+src: url('https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/circular-bold.woff'); font-weight: 500; }
+
+@font-face {
+font-family: 'Circular';
+src: url('https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/circular-black.woff'); font-weight: 600; }
+
+
+.font { font-family: 'Circular', Arial, sans-serif !important; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -58,7 +77,7 @@ body {
 .expandm { width: 100% !important; display: block !important; }
 .resizem { width: 100% !important; height: auto !important; }
 .hidem { display: none !important; }
-.h1m { font-size: 19px !important;}
+.h1m { font-size: 24px !important;}
 .h2m { font-size: 16px !important;}
 .h3m { font-size: 14px !important;}
 .centerm { text-align: center !important; }
@@ -76,6 +95,7 @@ body {
 .padt10m { padding-top: 10px !important; }
 .padt20m { padding-top: 20px !important; }
 .nopadbm { padding-bottom: 0px !important; }
+.padb6m { padding-bottom: 6px !important;}
 .padb10m { padding-bottom: 10px !important;}
 .padb20m { padding-bottom: 20px !important;}
 .padb40m { padding-bottom: 40px !important;}
@@ -103,15 +123,6 @@ body {
 .padb20 { padding-bottom: 20px !important;}
 }
 
-	@font-face{
-font-family: 'Museo Sans';
-src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.io/main/circular-book.woff');
-}
-
-@font-face{
-font-family: 'Publico';
-src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.io/main/circular-black.woff');
-}
 
 </style>
 
@@ -121,7 +132,7 @@ src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.i
       height: 220px; /* Default height for desktop */
   }
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 370px) {
       .weather-iframe {
           height: 410px; /* Smaller height for mobile */
       }
@@ -149,7 +160,7 @@ src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.i
     <td class="oborderl0 oborderr0" style="background-color: white; border: 1px solid #cbcbcb;">
     	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: -1px;">
     <tr>
-      <td background="https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.io/main/BD22.jpg" align="center" style="background-size: cover; background-position: middle center; background-repeat: no-repeat; background-color: #3f5efb;">
+      <td background="https://raw.githubusercontent.com/Alcwilliams/Alcwilliams.github.io/main/BD22.jpg" align="center" style="background-size: cover; background-position: middle center; background-repeat: no-repeat; background-color: #3f5efb;">
 
 	<div>
       	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -182,7 +193,7 @@ src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.i
       <td class="padt15m padb10m" align="center" style="padding-top: 20px; padding-bottom: 20px; background-color: white; ">
       	<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td class="h3m publico" style="font-family: Helvetica, Arial, sans-serif; color: #35353a; font-size: 24px; text-align: center; font-weight: bold;">Itinerary for the 2024 Bandon Classic</td>
+      <td class="h3m font" style="font-family: Helvetica, Arial, sans-serif; color: #35353a; font-size: 24px; text-align: center; font-weight: bold;">Itinerary for the 2024 Bandon Classic</td>
   </tr>
 </table>
       </td>
@@ -214,8 +225,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       	<table width="90%" border="0" cellspacing="0" cellpadding="0" class="w95m">
 
 <!-- /// Bulleted List Start -->
-<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px; color: white;">
-<span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: white; text-align: left;" class="h3m museosans">
+<tr>  <td align="center" class="h2m font" style="padding-top: 10px; text-align: center; font-size: 18px; color: white;">
+<span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: white; text-align: left;" class="h3m font">
   <a href="#Sun" style="Color: white; text-decoration: none;">SUN</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Mon" style="Color: white; text-decoration: none;">MON</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Tue" style="Color: white; text-decoration: none;">TUE</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Wed" style="Color: white; text-decoration: none; ">WED</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="#Wea" style="Color: white; text-decoration: none;">🌦️</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="#Shu" style="Color: white; text-decoration: none;">🚐</a></td>
 </tr>
 <!-- Bulleted List End /// -->
@@ -226,36 +237,68 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td class="opadticon" style="padding-top: 20px;">
       	<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
       	 	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
       <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/old-macdonald" target="_blank"><img src="oldmac.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Sat" /></a></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #373737; font-size: 26px; text-align: center; font-weight: bold;">Saturday • 10/16</td>
+      <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #373737; font-size: 26px; text-align: center; font-weight: 500;">Saturday • 10/16</td>
     </tr>
-<!-- /// Bulleted List Start -->
+
+    <!-- / BULLET START -->
 <tr>
-  <td align="center" style="padding-top: 10px; padding-left:20px;">
-    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+  <td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;">
+  <table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
 
+  <!-- IMAGE -->
+	<td width="70" align="center" valign="top" style="padding-right: 20px;">
+		<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+	<td style="    background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  text-align: center;
+  border:1px solid #c0c0c0">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="60%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">12:00</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Mike, Josh, Jeff, Bill</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-    </table>
+    <tr>
+		
+		<!-- time -->
+      <td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">12:00</td>
+    </tr>
+</table>
+		</td>
+    </tr>
+
+</table>
+		</td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+    
+  <tr>
+  
+  <!-- LINK -->
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">Mike, Josh, Jeff, Bill</td>
+  </tr>
+
+  </table>
   </td>
-</tr>
-<!-- Bulleted List End /// -->
+  </tr>
+  </table>	
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- BULLET END / -->	
+
 
 
 
@@ -274,53 +317,117 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td class="opadticon" style="padding-top: 20px;">
       	<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
       	 	 	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
       <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/sheep-ranch" target="_blank"><img src="pacdunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Sun"/></a></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Sunday • 10/17
-<!-- /// Bulleted List Start -->
+      <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Sunday • 10/17</td>
+          <!-- / BULLET START -->
 <tr>
-  <td align="center" style="padding-top: 10px; padding-left:20px;">
-    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+  <td align="center" style="padding-top: 10px; ">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;">
+  <table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
 
+  <!-- IMAGE -->
+	<td width="70" align="center" valign="top" style="padding-right: 20px;">
+		<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+	<td style="    background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  text-align: center;
+  border:1px solid #c0c0c0">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
+    <tr>
+		
+		<!-- time -->
+      <td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">10:30</td>
+    </tr>
+</table>
+		</td>
+    </tr>
 
+</table>
+		</td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+    
+  <tr>
+  
+  <!-- LINK -->
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">Chris/Steve vs Al/Bill</td>
+  </tr>
 
-
-
-
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-             <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">10:30</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Chris/Steve vs Alex/Billy</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-
-		<!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">10:40</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Eric/Jeff vs Josh/Mike</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-    </table>
+  </table>
   </td>
-</tr>
-<!-- Bulleted List End /// -->
+  </tr>
+  </table>	
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- BULLET END / -->	    <!-- / BULLET START -->
+<tr>
+  <td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;">
+  <table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+
+  <!-- IMAGE -->
+	<td width="70" align="center" valign="top" style="padding-right: 20px;">
+		<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+	<td style="    background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  text-align: center;
+  border:1px solid #c0c0c0">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+		
+		<!-- time -->
+      <td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">10:40</td>
+    </tr>
+</table>
+		</td>
+    </tr>
+
+</table>
+		</td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+    
+  <tr>
+  
+  <!-- LINK -->
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">Eric/Jeff vs Josh/Mike</td>
+  </tr>
+
+  </table>
+  </td>
+  </tr>
+  </table>	
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- BULLET END / -->	
+
 
 
 
@@ -338,54 +445,121 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td class="opadticon" style="padding-top: 20px;">
       	<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
       <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-trails" target="_blank"><img src="btrails.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Mon" /></a></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday • 11/18 AM</td>
+      <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday • 11/18 AM</td>
     </tr>
-<!-- /// Bulleted List Start -->
+
+    <!-- / BULLET START -->
 <tr>
-  <td align="center" style="padding-top: 10px; padding-left:20px;">
-    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+  <td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;">
+  <table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
 
+  <!-- IMAGE -->
+	<td width="70" align="center" valign="top" style="padding-right: 20px;">
+		<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+	<td style="    background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  text-align: center;
+  border:1px solid #c0c0c0">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">9:40</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Jeff/Steve vs. Billy/Josh</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
+    <tr>
+		
+		<!-- time -->
+      <td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">9:40</td>
+    </tr>
+</table>
+		</td>
+    </tr>
 
+</table>
+		</td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+    
+  <tr>
+  
+  <!-- LINK -->
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">Jeff/Steve vs. Bill/Josh</td>
+  </tr>
 
-
-
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0"class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">9:50</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Chirs/Eric vs Alex/Mike</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-
-
-    </table>
+  </table>
   </td>
-</tr>
-<!-- Bulleted List End /// -->
+  </tr>
+  </table>	
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- BULLET END / -->	
+<!-- / BULLET START -->
+<tr>
+  <td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;">
+  <table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+
+  <!-- IMAGE -->
+	<td width="70" align="center" valign="top" style="padding-right: 20px;">
+		<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+	<td style="    background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  text-align: center;
+  border:1px solid #c0c0c0">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+		
+		<!-- time -->
+      <td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">9:50</td>
+    </tr>
+</table>
+		</td>
+    </tr>
+
+</table>
+		</td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+    
+  <tr>
+  
+  <!-- LINK -->
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">Chirs/Eric vs Al/Mike</td>
+  </tr>
+
+  </table>
+  </td>
+  </tr>
+  </table>	
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- BULLET END / -->	
+
+
 
 
 
@@ -403,126 +577,84 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td class="opadticon" style="padding-top: 20px;">
       	<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
       <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/pacific-dunes" target="_blank"><img src="shortys.png" width="110"  style="display: block; border: 0; margin-top: -70px;" /></a></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;"><span class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday • 11/18 PM</span></td>
+      <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;"><span class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday • 11/18 PM</span></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 5px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: normal;">(2-Man Scramble)</td>
+      <td class="h2m font" style="padding-top: 5px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: normal;">(2-Man Scramble)</td>
     </tr>
-<!-- /// Bulleted List Start -->
-<tr>
-  <td align="center" style="padding-top: 10px; padding-left:20px;">
-    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
 
-
-
-
-
-
-
-           <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="50%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">2:45</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">All Players</td>
-
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="50%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">3:00</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">All Players</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-
-
-    </table>
-  </td>
-</tr>
-<!-- Bulleted List End /// -->
-
-
-
-
-</table>
-      </td>
-    </tr>
-</table>
-      </td>
-    </tr>
-			<!-- /// Mod /// -->
+<!-- / BULLET START -->
+<tr><td align="center" style="padding-top: 10px;">
+<table class="w90m" align="center" width="50%" border="0" cellspacing="0" cellpadding="0" role="presentation"><tr>
+<td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;"><table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr>
+<!-- IMAGE --><td width="70" align="center" valign="top" style="padding-right: 20px;">
+<table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr><td style="background-color: #ebebeb;padding: 5px;border-radius: 4px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);letter-spacing: 2px;text-align: center;border:1px solid #c0c0c0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><!-- time --><td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">
+2:45
+</td></tr></table></td></tr></table></td>
+<td class="pad0m" style="padding-left: 0px;">
+<table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+ <tr>
+<td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">
+All Players
+</td></tr></table></td></tr></table>	</td></tr></table></td></tr><!-- BULLET END / --></table></td></tr></table></td></tr>
+<!-- /// Mod /// -->
 
 						    <!-- /// Mod /// -->
 			<tr>
       <td class="opadticon" style="padding-top: 20px; padding-bottom: 20px;">
       <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
       	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
       <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="sheep.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Tue" /></a></td>
     </tr>
     <tr>
-      <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Tuesday • 11/19</td>
+      <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Tuesday • 11/19</td>
     </tr>
-<!-- /// Bulleted List Start -->
-<tr>
-  <td align="center" style="padding-top: 10px; padding-left:20px;">
-    <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+    <!-- / BULLET START -->
+<tr><td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation"><tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;"><table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr>
+  <!-- IMAGE --><td width="70" align="center" valign="top" style="padding-right: 20px;">
+  <table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td style="background-color: #ebebeb;padding: 5px;border-radius: 4px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);letter-spacing: 2px;text-align: center;border:1px solid #c0c0c0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><!-- time --><td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">
+    8:20
+  </td></tr></table></td></tr></table></td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+   <tr>
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">
+    Steve/Eric vs Al/Josh
+  </td></tr></table></td></tr></table>	</td></tr></table></td></tr><!-- BULLET END / -->
+
+  <!-- /// Mod /// --><!-- / BULLET START -->
+<tr><td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation"><tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;"><table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr>
+  <!-- IMAGE --><td width="70" align="center" valign="top" style="padding-right: 20px;">
+  <table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td style="background-color: #ebebeb;padding: 5px;border-radius: 4px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);letter-spacing: 2px;text-align: center;border:1px solid #c0c0c0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><!-- time --><td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">
+8:30
+  </td></tr></table></td></tr></table></td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+   <tr>
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">
+    Chris/Jeff vs Mike/Bill
+  </td></tr></table></td></tr></table>	</td></tr></table></td></tr><!-- BULLET END / -->
 
 
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">8:20</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Steve/Eric vs Alex/Josh</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-
-
-
-
-      <!-- List Item Start -->
-      <tr>
-        <td style="padding-top: 10px;">
-          <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-            <tr>
-              <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">8:30</td>
-              <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Chris/Jeff vs Mike/Billy</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <!-- List Item End -->
-
-
-
-
-    </table>
-  </td>
-</tr>
-<!-- Bulleted List End /// -->
 
 
 
@@ -540,55 +672,47 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
         <td class="opadticon" style="padding-top: 20px; padding-bottom: 20px;">
         <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
       <tr>
-        <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+        <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
           <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
       <tr>
         <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="bandunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Wed" /></a></td>
       </tr>
       <tr>
-        <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Wednesday • 11/20</td>
+        <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Wednesday • 11/20</td>
       </tr>
-  <!-- /// Bulleted List Start -->
-  <tr>
-    <td align="center" style="padding-top: 10px; padding-left:20px;">
-      <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
-  
-  
-        <!-- List Item Start -->
-        <tr>
-          <td style="padding-top: 10px;">
-            <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-              <tr>
-                <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">9:50</td>
-                <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Steve, Chirs, Alex, Eric</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <!-- List Item End -->
-  
-  
-  
-  
-        <!-- List Item Start -->
-        <tr>
-          <td style="padding-top: 10px;">
-            <table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" class="w100m">
-              <tr>
-                <td width="45" class="h2m museosans" style="padding-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #b52b46; text-align: right; font-weight: bold;">8:30</td>
-                <td class="h2m museosans" style="padding-left:5px; font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: left; font-weight:600;">Josh, Jeff, Mike, Billy</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <!-- List Item End -->
-  
 
-  
-      </table>
-    </td>
-  </tr>
-  <!-- Bulleted List End /// -->
+        <!-- /// Mod /// --><!-- / BULLET START -->
+<tr><td align="center" style="padding-top: 10px;">
+  <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation"><tr>
+  <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;"><table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr>
+  <!-- IMAGE --><td width="70" align="center" valign="top" style="padding-right: 20px;">
+  <table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td style="background-color: #ebebeb;padding: 5px;border-radius: 4px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);letter-spacing: 2px;text-align: center;border:1px solid #c0c0c0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr><!-- time --><td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">
+9:50
+  </td></tr></table></td></tr></table></td>
+  <td class="pad0m" style="padding-left: 0px;">
+  <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+   <tr>
+  <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">
+    Steve, Chirs, Al, Eric
+  </td></tr></table></td></tr></table>	</td></tr></table></td></tr><!-- BULLET END / -->  <!-- /// Mod /// --><!-- / BULLET START -->
+  <tr><td align="center" style="padding-top: 10px;">
+    <table class="w90m" align="center" width="70%" border="0" cellspacing="0" cellpadding="0" role="presentation"><tr>
+    <td class="shadow2 padt10m padb10m" align="center" style="overflow: hidden; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #DEDEDE; padding-top: 20px; padding-bottom: 20px;"><table class="padt5m padb6m" width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr>
+    <!-- IMAGE --><td width="70" align="center" valign="top" style="padding-right: 20px;">
+    <table class="w100m" width="50" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr><td style="background-color: #ebebeb;padding: 5px;border-radius: 4px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);letter-spacing: 2px;text-align: center;border:1px solid #c0c0c0"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr><!-- time --><td class="h2m" style="; padding: 5px; text-align: center; color: #008f00; font-size: 19px; font-family: Courier, sans-serif; line-height: 1em; font-weight:600">
+10:00
+    </td></tr></table></td></tr></table></td>
+    <td class="pad0m" style="padding-left: 0px;">
+    <table class="w100" width="100%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+     <tr>
+    <td class=" font h2m" align="center" style="font-size: 19px; font-family: Arial, sans-serif; text-align: left; color: #212121; line-height: 1.4em; font-weight: 400;">
+      Josh, Jeff, Mike, Bill
+    </td></tr></table></td></tr></table>	</td></tr></table></td></tr><!-- BULLET END / -->
+
   
   
   
@@ -603,7 +727,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
 
 <!-- /// Mod /// -->
 <tr>
-  <td style="padding-top: 20px; padding-bottom: 20px;">
+  <td style="padding-top: 20px; padding-bottom: 40px;">
   <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
       <tr>
 <td style="padding-bottom: 10px;background-color: #f7f7f7;box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; overflow: hidden;" id="Wea">
@@ -642,13 +766,13 @@ body { margin: 0; padding: 0; overflow: hidden; }
                         <td class="opadticon" style="padding-top: 20px; padding-bottom: 20px;">
                         <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
                       <tr>
-                        <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+                        <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
                           <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
                       <tr>
                         <td align="center"><a href="https://www.trackmyshuttle.com/a/bandon" target="_blank"><img src="shuttle_bg.svg" width="220"  style="display: block; border: 0; margin-top: -100px;" id="Shu" /></a></td>
                       </tr>
                       <tr>
-                        <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Request a Shuttle</td>
+                        <td class="h2m font" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Request a Shuttle</td>
                       </tr>
                   <!-- /// Bulleted List Start -->
                   <tr>
@@ -658,12 +782,12 @@ body { margin: 0; padding: 0; overflow: hidden; }
                   
                         <tr>
                           <td align="center" style="padding-top: 10px;">
-                          <table border="0" align="center" cellpadding="0" cellspacing="0" class="w90m" role="presentation">
+                          <table border="0" align="center" cellpadding="0" cellspacing="0" class="" role="presentation">
                           <tr>
                           <td class="button dmbg2" style="background-color: #a92e55; border-radius: 30px; overflow: hidden;">
                           <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                          <td class="publico button pad0m" align="center" style="padding: 16px 28px; font-size: 16x; color: white; font-family: Arial, sans-serif; text-align: center; text-transform: none; font-weight: 600;"><a href="https://www.trackmyshuttle.com/a/bandon#dropoff" alias="" style="color: white; text-decoration: none;"><span class="dmt1 padt10m padb10m" style="display: block; width: 100%;">Request a Ride</span></a></td>
+                          <td class="font button pad0m h3m" align="center" style="padding: 16px 28px; font-size: 16x; color: white; font-family: Arial, sans-serif; text-align: center; text-transform: none; font-weight: 600;"><a href="https://www.trackmyshuttle.com/a/bandon#dropoff" alias="" style="color: white; text-decoration: none;">Request a Ride</a></td>
                           </tr>
                           </table>
                           </td>
@@ -695,27 +819,27 @@ body { margin: 0; padding: 0; overflow: hidden; }
       <td style="padding-top: 20px; padding-bottom: 20px;">
       <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; " id="FAQ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 20px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; " id="FAQ">
       	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m">
 
     <tr>
-      <td class="h2m publico" style="font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">FAQs</td>
+      <td class="h2m font" style="font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">FAQs</td>
     </tr>
 <!-- /// Bulleted List Start -->
 <tr>
-  <td align="center" class="h2m museosans" style="padding-top: 10px; padding-left:10px;text-align: Left; font-size: 18px; "></td>
+  <td align="center" class="h2m font" style="padding-top: 10px; padding-left:10px;text-align: Left; font-size: 18px; "></td>
 </tr>
 <!-- Bulleted List End /// -->
 			<!-- /// Bulleted List Start -->
 <tr>
-  <td align="center" width="90%" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Best Ball Team Match Play</b></td>
+  <td align="center" width="90%" class="h2m font" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Best Ball Team Match Play</b></td>
 </tr>
 <!-- Bulleted List End /// -->
-<tr>  <td align="center" class="h2m museosans" style="padding-top: 5px; text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">Pacific, Trails, & Sheep: 1pt/hole</td>
+<tr>  <td align="center" class="h2m font" style="padding-top: 5px; text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">Pacific, Trails, & Sheep: 1pt/hole</td>
 </tr>
-			<tr>  <td align="center" class="h2m museosans" style="text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">(No Carryover Holes). Total team score</td>
+			<tr>  <td align="center" class="h2m font" style="text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">(No Carryover Holes). Total team score</td>
 </tr>
-			<tr>  <td align="center" class="h2m museosans" style="text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">after Sheep wins $800 pot.</td>
+			<tr>  <td align="center" class="h2m font" style="text-align: center; font-font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;">after Sheep wins $800 pot.</td>
 </tr>
 
 
@@ -726,12 +850,12 @@ body { margin: 0; padding: 0; overflow: hidden; }
 		  <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m">
 
 <!-- /// Bulleted List Start -->
-<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>The Cannonball 4</b> <br /><span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m museosans">Alex, Billy, Josh, Mike</span></td>
+<tr>  <td align="center" class="h2m font" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>The Cannonball 4</b> <br /><span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m font">Al, Bill, Josh, Mike</span></td>
 </tr>
 <!-- Bulleted List End /// -->
 
 			  <!-- /// Bulleted List Start -->
-<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Balls Deep</b><br /> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m museosans">Chris, Eric, Jeff, Steve</span></td>
+<tr>  <td align="center" class="h2m font" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Balls Deep</b><br /> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m font">Chris, Eric, Jeff, Steve</span></td>
 </tr>
 
 
@@ -742,7 +866,7 @@ body { margin: 0; padding: 0; overflow: hidden; }
 
 
 <!-- /// Bulleted List Start -->
-<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Roomates:</b> <br /><span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m museosans">Steve/Chris, Al/Eric <br />Jeff/Billy, Josh/Mike </span></td>
+<tr>  <td align="center" class="h2m font" style="padding-top: 10px; text-align: center; font-size: 18px;"><b>Roomates:</b> <br /><span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: #38383C; text-align: center;" class="h2m font">Steve/Chris, Al/Eric <br />Jeff/Bill, Josh/Mike </span></td>
 </tr>
 <!-- Bulleted List End /// -->
 
