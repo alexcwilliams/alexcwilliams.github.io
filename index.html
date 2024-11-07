@@ -115,7 +115,18 @@ src: url('https://raw.githubusercontent.com/alexcwilliams/alexcwilliams.github.i
 
 </style>
 
-
+<style>
+  .weather-iframe {
+      width: 100%;
+      height: 220px; /* Default height for desktop */
+  }
+  
+  @media only screen and (max-width: 480px) {
+      .weather-iframe {
+          height: 410px; /* Smaller height for mobile */
+      }
+  }
+  </style>
 
 
 </head>
@@ -203,7 +214,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       	<table width="90%" border="0" cellspacing="0" cellpadding="0" class="w95m">
 
 <!-- /// Bulleted List Start -->
-<tr>  <td align="center" class="h3m museosans" style="padding-top: 10px; text-align: center; font-size: 18px; color: white;"><b>Jump:</b> <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: white; text-align: left;" class="h3m museosans"><a href="#Sun" style="Color: white; text-decoration: underline;">Sunday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Sun" style="Color: white; text-decoration: underline;">Monday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Tues" style="Color: white; text-decoration: underline;">Tuesday</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#Wed" style="Color: white; text-decoration: underline;">Wednesday</a></td>
+<tr>  <td align="center" class="h2m museosans" style="padding-top: 10px; text-align: center; font-size: 18px; color: white;">
+<span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.3em; color: white; text-align: left;" class="h3m museosans">
+  <a href="#Sun" style="Color: white; text-decoration: none;">SUN</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Mon" style="Color: white; text-decoration: none;">MON</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Tue" style="Color: white; text-decoration: none;">TUE</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="#Wed" style="Color: white; text-decoration: none; ">WED</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="#Wea" style="Color: white; text-decoration: none;">🌦️</a>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="#Shu" style="Color: white; text-decoration: none;">🚐</a></td>
 </tr>
 <!-- Bulleted List End /// -->
 
@@ -264,7 +277,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
       	 	 	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
-      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/sheep-ranch" target="_blank"><img src="pacdunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="#Sun"/></a></td>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/sheep-ranch" target="_blank"><img src="pacdunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Sun"/></a></td>
     </tr>
     <tr>
       <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Sunday • 10/17
@@ -328,7 +341,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
-      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-trails" target="_blank"><img src="btrails.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="#Mon" /></a></td>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-trails" target="_blank"><img src="btrails.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Mon" /></a></td>
     </tr>
     <tr>
       <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Monday • 11/18 AM</td>
@@ -463,7 +476,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
       	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
     <tr>
-      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="sheep.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="#Tue" /></a></td>
+      <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="sheep.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Tue" /></a></td>
     </tr>
     <tr>
       <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Tuesday • 11/19</td>
@@ -530,7 +543,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
         <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
           <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
       <tr>
-        <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="bandunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="#Wed" /></a></td>
+        <td align="center"><a href="https://www.bandondunesgolf.com/golf/golf-courses/bandon-dunes" target="_blank"><img src="bandunes.png" width="110"  style="display: block; border: 0; margin-top: -70px;" id="Wed" /></a></td>
       </tr>
       <tr>
         <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Wednesday • 11/20</td>
@@ -588,12 +601,101 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
       </tr>
         <!-- /// Mod /// -->
 
-			    <!-- /// Mod /// -->
+<!-- /// Mod /// -->
+<tr>
+  <td style="padding-top: 20px; padding-bottom: 20px;">
+  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+<td style="padding-bottom: 10px;background-color: #f7f7f7;box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; overflow: hidden;" id="Wea">
+<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td align="center">
+  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+<iframe class="weather-iframe" srcdoc='
+<style>
+body { margin: 0; padding: 0; overflow: hidden; }
+</style>
+<a class="weatherwidget-io" href="https://forecast7.com/en/43d12n124d41/bandon/?unit=us" data-label_1="BANDON" data-label_2="WEATHER" data-font="Noto Sans" data-icons="Climacons Animated" data-days="5" data-theme="clear" >BANDON WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
+</script>
+' width="100%" height="210px" frameborder="0" scrolling="no"></iframe>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- /// Mod /// -->
+
+
+
+</table>
+</td>
+</tr>
+<!-- /// Mod /// -->
+
+      						    <!-- /// Mod /// -->
+                      <tr>
+                        <td class="opadticon" style="padding-top: 20px; padding-bottom: 20px;">
+                        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
+                      <tr>
+                        <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+                          <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+                      <tr>
+                        <td align="center"><a href="https://www.trackmyshuttle.com/a/bandon" target="_blank"><img src="shuttle_bg.svg" width="220"  style="display: block; border: 0; margin-top: -100px;" id="Shu" /></a></td>
+                      </tr>
+                      <tr>
+                        <td class="h2m publico" style="padding-top: 20px; font-family: Georgia, serif; color: #333; font-size: 26px; text-align: center; font-weight: bold;">Request a Shuttle</td>
+                      </tr>
+                  <!-- /// Bulleted List Start -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px; ">
+                      <table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" >
+                  
+                  
+                        <tr>
+                          <td align="center" style="padding-top: 10px;">
+                          <table border="0" align="center" cellpadding="0" cellspacing="0" class="w90m" role="presentation">
+                          <tr>
+                          <td class="button dmbg2" style="background-color: #a92e55; border-radius: 30px; overflow: hidden;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                          <tr>
+                          <td class="publico button pad0m" align="center" style="padding: 16px 28px; font-size: 16x; color: white; font-family: Arial, sans-serif; text-align: center; text-transform: none; font-weight: 600;"><a href="https://www.trackmyshuttle.com/a/bandon#dropoff" alias="" style="color: white; text-decoration: none;"><span class="dmt1 padt10m padb10m" style="display: block; width: 100%;">Request a Ride</span></a></td>
+                          </tr>
+                          </table>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          </tr>
+                  
+                
+                  
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Bulleted List End /// -->
+                  
+                  
+                  
+                  
+                  </table>
+                        </td>
+                      </tr>
+                  </table>
+                        </td>
+                      </tr>
+                        <!-- /// Mod /// -->
+
+ <!-- /// Mod /// -->
 			<tr>
       <td style="padding-top: 20px; padding-bottom: 20px;">
       <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
     <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
+      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; " id="FAQ">
       	<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="w95m">
 
     <tr>
@@ -654,33 +756,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endCo
 </table>
       </td>
     </tr>
-			<!-- /// Mod /// -->
-
-						<tr>
-      <td style="padding-top: 20px; padding-bottom: 80px;">
-      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" >
-    <tr>
-      <td align="center" style="background-color: white; padding-top: 20px; padding-bottom: 30px; border-spacing: 0px; box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; ">
-      	<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
-
-    <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="90%" src="https://forecast.io/embed/#lat=43.117&lon=-124.4143&name=Bandon&color=#ffffff&font=Helvetica"></iframe>
+<!-- /// Mod /// -->
+ 
 
 
-
-
-</table>
-      </td>
-    </tr>
-</table>
-      </td>
-    </tr>
-			<!-- /// Mod /// -->
-
-
-
-</table>
-      </td>
-  </tr>
 </table>
       </td>
   </tr>
