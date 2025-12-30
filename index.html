@@ -241,7 +241,21 @@
       text-align: left;
     }
 
-    .time-badge {
+.schedule-item.with-logo {
+  gap: 18px;
+}
+
+.schedule-logo {
+  margin-left: auto;
+  width: 96px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #f5f1e7;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.time-badge {
       min-width: 76px;
       text-align: center;
       padding: 8px 10px;
@@ -532,7 +546,7 @@
 
     <main class="container">
       <section class="section card schedule-card" id="Wed">
-        <img src="oldmac.png" alt="Old Macdonald" class="course-logo">
+        <a href="https://coursepreview.golf/oldmacdonald/?hole=1" target="_blank" rel="noopener"><img src="oldmac.png" alt="Old Macdonald" class="course-logo"></a>
         <h2>Wednesday • 2/12</h2>
         <ul class="schedule-list">
           <li class="schedule-item">
@@ -549,7 +563,7 @@
       </section>
 
       <section class="section card schedule-card">
-        <img src="preserve.png" alt="Bandon Preserve" class="course-logo">
+        <a href="https://coursepreview.golf/bandonpreserve/?hole=1" target="_blank" rel="noopener"><img src="preserve.png" alt="Bandon Preserve" class="course-logo"></a>
         <h2>Wednesday • 2/12 PM</h2>
         <div class="subhead">(2-Man Scramble - 3 Clubs Only)</div>
         <ul class="schedule-list" style="width: min(420px, 100%);">
@@ -561,7 +575,7 @@
       </section>
 
       <section class="section card schedule-card" id="Thu">
-        <img src="bandunes.png" alt="Bandon Dunes" class="course-logo">
+        <a href="https://coursepreview.golf/bandondunes/?hole=1" target="_blank" rel="noopener"><img src="bandunes.png" alt="Bandon Dunes" class="course-logo"></a>
         <h2>Thursday • 2/14</h2>
         <ul class="schedule-list">
           <li class="schedule-item">
@@ -576,7 +590,7 @@
       </section>
 
       <section class="section card schedule-card" id="Fri">
-        <img src="btrails.png" alt="Bandon Trails" class="course-logo">
+        <a href="https://coursepreview.golf/bandontrails/?hole=1" target="_blank" rel="noopener"><img src="btrails.png" alt="Bandon Trails" class="course-logo"></a>
         <h2>Friday • 2/13 AM</h2>
         <ul class="schedule-list">
           <li class="schedule-item">
@@ -591,7 +605,7 @@
       </section>
 
       <section class="section card schedule-card">
-        <img src="shortys.png" alt="Shorty's" class="course-logo">
+        <a href="https://coursepreview.golf/shortys/?hole=1" target="_blank" rel="noopener"><img src="shortys.png" alt="Shorty's" class="course-logo"></a>
         <h2>Friday • 2/13 PM</h2>
         <div class="subhead">(2-Man Scramble)</div>
         <ul class="schedule-list" style="width: min(420px, 100%);">
@@ -603,7 +617,7 @@
       </section>
 
       <section class="section card schedule-card" id="Sat">
-        <img src="pacdunes.png" alt="Pacific Dunes" class="course-logo">
+        <a href="https://coursepreview.golf/pacificdunes/?hole=1" target="_blank" rel="noopener"><img src="pacdunes.png" alt="Pacific Dunes" class="course-logo"></a>
         <h2>Saturday • 2/14</h2>
         <ul class="schedule-list">
           <li class="schedule-item">
@@ -638,39 +652,45 @@
         <div class="stack">
           <div class="dinner-day">Tuesday • 2/10</div>
           <ul class="schedule-list">
-            <li class="schedule-item">
+            <li class="schedule-item with-logo">
               <div class="time-badge">7:00</div>
               <span>
                 <button class="menu-link" type="button" data-modal="menu" data-pdf="https://bandondunesgolf.com/wp-content/uploads/2025/08/McKees-Pub-Menu-8-1-25-Dinner.pdf">McKee's Pub</button>
               </span>
+              <img class="schedule-logo" src="avatars/mckees.png" alt="McKee's Pub logo">
             </li>
           </ul>
 
           <div class="dinner-day">Wednesday • 2/11</div>
           <ul class="schedule-list">
-            <li class="schedule-item">
+            <li class="schedule-item with-logo">
               <div class="time-badge">7:00</div>
               <span>
                 <button class="menu-link" type="button" data-modal="menu" data-pdf="https://bandondunesgolf.com/wp-content/uploads/2025/10/GTG-Dinner-Menu-9-30-25.pdf">Ghost Creek</button>
               </span>
+              <img class="schedule-logo" src="avatars/ghosttree.png" alt="Ghost Creek logo">
             </li>
           </ul>
 
           <div class="dinner-day">Thursday • 2/12</div>
           <ul class="schedule-list">
-            <li class="schedule-item">
+            <li class="schedule-item with-logo">
               <div class="time-badge">6:30</div>
               <span>
                 <button class="menu-link" type="button" data-modal="menu" data-pdf="https://bandondunesgolf.com/wp-content/uploads/2025/10/Dinner-Gallery-Menu-10-28-25.pdf">The Gallery</button>
               </span>
+              <img class="schedule-logo" src="avatars/gallery.png" alt="The Gallery logo">
             </li>
           </ul>
 
           <div class="dinner-day">Friday • 2/13</div>
           <ul class="schedule-list">
-            <li class="schedule-item">
+            <li class="schedule-item with-logo">
               <div class="time-badge">6:30</div>
-              <span> <button class="menu-link" type="button" data-modal="menu" data-pdf="https://bandondunesgolf.com/wp-content/uploads/2025/11/Pacific-Grill-Menus-10-16-25-Dinner.pdf">Pacific Grill</button></span>
+              <span>
+                <button class="menu-link" type="button" data-modal="menu" data-pdf="https://bandondunesgolf.com/wp-content/uploads/2025/11/Pacific-Grill-Menus-10-16-25-Dinner.pdf">Pacific Grill</button>
+              </span>
+              <img class="schedule-logo" src="avatars/pacgrill.png" alt="Pacific Grill logo">
             </li>
           </ul>
         </div>
@@ -694,19 +714,19 @@
       <section class="section card faq" id="FAQ">
         <h2>FAQs</h2>
         <h3>Best Ball Team Match Play</h3>
-        <p>Pacific, Trails, &amp; Sheep: 1pt/hole</p>
+        <p>Old Mac, Bandon, &amp; Trails: 1pt/hole</p>
         <p>(No Carryover Holes). Total team score</p>
-        <p>after Sheep wins $800 pot.</p>
+        <p>after Trails wins $800 pot.</p>
 
-        <h3>The Cannonball 4</h3>
-        <p>Al, Bill, Josh, Mike</p>
+        <h3>TBD</h3>
+        <p>Alex, Big City, Eric, Steve</p>
 
-        <h3>Balls Deep</h3>
-        <p>Chris, Eric, Jeff, Steve</p>
+        <h3>TBD</h3>
+        <p>Broku Jeff, Josh, Mike</p>
 
         <h3>Roomates:</h3>
-        <p>Steve/Chris, Al/Eric</p>
-        <p>Jeff/Bill, Josh/Mike</p>
+        <p>Alex/Steve, Eric/Josh</p>
+        <p>Jeff/Mike, Big City/Broku</p>
       </section>
     </main>
   </div>
