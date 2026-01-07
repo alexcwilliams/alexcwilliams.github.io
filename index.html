@@ -487,35 +487,173 @@
       font-size: clamp(18px, 2.2vw, 24px);
     }
 
-    .leaderboard-grid {
+    .scoreboard {
       margin-top: 22px;
+      border: 1px solid var(--line);
+      background: var(--card);
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
+      grid-template-rows: 2rem auto;
+      grid-template-columns: minmax(8rem, 1fr) 5rem;
+      grid-auto-rows: auto;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .scoreboard-title {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 0 1rem;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+    }
+
+    .scoreboard-quarters {
+      display: none;
+    }
+
+    .scoreboard-total {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 1.2rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+    }
+
+    .scoreboard-body {
+      grid-column: 1 / -1;
+    }
+
+    .scoreboard-team {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(8rem, 1fr) 5rem;
+      align-items: center;
+      padding: 0.5rem 0 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .scoreboard-team:last-of-type {
+      border-bottom: 0;
+    }
+
+    .team-details {
+      padding: 0 0.5rem;
+      padding-right: 2rem;
+      display: grid;
+      grid-template-rows: auto .5fr;
+      grid-template-columns: 3.5rem 1fr;
       align-items: center;
     }
 
-    .leaderboard-team {
-      text-align: center;
+    .team-logo {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem;
     }
 
-    .leaderboard-team img {
-      width: 100px;
-      margin: 0 auto 12px;
-      border-radius: 999px;
-      border: 1px solid #eeeeee;
+    .team-logo img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid #d5d1e4;
+      object-fit: cover;
+      background: #fff;
     }
 
-    .leaderboard-score {
-      padding-top: 10px;
-      font-size: 24px;
+    .team-name {
+      grid-column: 2 / span 1;
+      grid-row: 1 /;
+      padding-left: 0.75rem;
+      text-align: left;
       font-weight: 700;
+      color: #4b4b53;
+      font-size: 1rem;
     }
 
-    .leaderboard-name {
-      font-size: 18px;
-      padding-top: 10px;
-      font-weight: 700;
+    .team-captain {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      padding-left: 0.75rem;
+      text-align: left;
+      color: #7a7a84;
+      font-size: .75rem;
+    }
+
+    .team-score {
+      display: none;
+    }
+
+    .team-total {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #8b8b96;
+    }
+
+    @media only screen and (min-width: 500px) {
+      .scoreboard {
+        grid-template-columns: minmax(8rem, 1fr) repeat(3, 2rem) 5rem;
+      }
+
+      .scoreboard-title {
+        grid-column: 1 / span 1;
+      }
+
+      .scoreboard-quarters {
+        display: flex;
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .scoreboard-quarters span {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7a7a84;
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+      }
+
+      .scoreboard-total {
+        grid-column: 5 / span 1;
+      }
+
+      .scoreboard-team {
+        grid-template-columns: minmax(8rem, 1fr) repeat(3, 2rem) 5rem;
+      }
+
+      .team-details {
+        padding-right: 3rem;
+      }
+
+      .team-score {
+        display: flex;
+        width: 2rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: #7a7a84;
+      }
     }
 
     .faq {
@@ -560,6 +698,10 @@
       .schedule-item span {
         font-size: 15px;
 
+      }
+
+      .team-total {
+        font-size: 1.5rem;
       }
     }
 
@@ -761,16 +903,41 @@
       <section class="section card schedule-card">
         <img src="img/cup.png" alt="Leaderboard" class="course-logo">
         <h2>Real-Time Leaderboard</h2>
-        <div class="leaderboard-grid" id="leaderboard-grid">
-          <div class="leaderboard-team">
-            <img src="img/lbc.png" alt="LBC">
-            <div class="leaderboard-score">0</div>
-            <div class="leaderboard-name">LBC</div>
+        <div class="scoreboard" id="scoreboard">
+          <div class="scoreboard-title" id="scoreboard-title">Bandon Invitational</div>
+          <div class="scoreboard-quarters" id="scoreboard-quarters">
+            <span>OM</span>
+            <span>BD</span>
+            <span>BT</span>
           </div>
-          <div class="leaderboard-team">
-            <img src="img/tst.png" alt="TST">
-            <div class="leaderboard-score">0</div>
-            <div class="leaderboard-name">TST</div>
+          <div class="scoreboard-total">T</div>
+          <div class="scoreboard-body" id="scoreboard-body">
+            <div class="scoreboard-team">
+              <div class="team-details">
+                <div class="team-logo">
+                  <img src="img/lbc.png" alt="LBC">
+                </div>
+                <div class="team-name">LBC</div>
+                <div class="team-captain">Capt. Eric Fickes</div>
+              </div>
+              <div class="team-score">0</div>
+              <div class="team-score">0</div>
+              <div class="team-score">0</div>
+              <div class="team-total">0</div>
+            </div>
+            <div class="scoreboard-team">
+              <div class="team-details">
+                <div class="team-logo">
+                  <img src="img/tst.png" alt="TST">
+                </div>
+                <div class="team-name">TST</div>
+                <div class="team-captain">Capt. Josh Jenkins</div>
+              </div>
+              <div class="team-score">0</div>
+              <div class="team-score">0</div>
+              <div class="team-score">0</div>
+              <div class="team-total">0</div>
+            </div>
           </div>
         </div>
       </section>
@@ -850,9 +1017,12 @@
   </script>
   <script>
     (function () {
-      var grid = document.getElementById("leaderboard-grid");
+      var scoreboard = document.getElementById("scoreboard");
+      var title = document.getElementById("scoreboard-title");
+      var quarters = document.getElementById("scoreboard-quarters");
+      var body = document.getElementById("scoreboard-body");
 
-      if (!grid) {
+      if (!scoreboard || !title || !quarters || !body) {
         return;
       }
 
@@ -868,27 +1038,62 @@
             return;
           }
 
-          grid.innerHTML = "";
+          var days = Array.isArray(data.days) ? data.days : [];
+          title.textContent = data.title || "Leaderboard";
+          quarters.innerHTML = "";
+          days.forEach(function (day) {
+            var dayCell = document.createElement("span");
+            dayCell.textContent = day;
+            quarters.appendChild(dayCell);
+          });
+
+          body.innerHTML = "";
           data.teams.forEach(function (team) {
-            var teamEl = document.createElement("div");
-            teamEl.className = "leaderboard-team";
+            var row = document.createElement("div");
+            row.className = "scoreboard-team";
+
+            var details = document.createElement("div");
+            details.className = "team-details";
+
+            var logoWrap = document.createElement("div");
+            logoWrap.className = "team-logo";
 
             var logo = document.createElement("img");
             logo.src = team.logo || "";
             logo.alt = team.name || "Team";
 
-            var score = document.createElement("div");
-            score.className = "leaderboard-score";
-            score.textContent = String(team.score ?? "0");
+            var teamName = document.createElement("div");
+            teamName.className = "team-name";
+            teamName.textContent = team.name || "";
 
-            var name = document.createElement("div");
-            name.className = "leaderboard-name";
-            name.textContent = team.name || "";
+            var captain = document.createElement("div");
+            captain.className = "team-captain";
+            captain.textContent = team.captain || "";
 
-            teamEl.appendChild(logo);
-            teamEl.appendChild(score);
-            teamEl.appendChild(name);
-            grid.appendChild(teamEl);
+            logoWrap.appendChild(logo);
+            details.appendChild(logoWrap);
+            details.appendChild(teamName);
+            details.appendChild(captain);
+            row.appendChild(details);
+
+            var scores = Array.isArray(team.scores) ? team.scores : [];
+            var total = typeof team.total === "number" ? team.total : scores.reduce(function (sum, value) {
+              return sum + (typeof value === "number" ? value : 0);
+            }, 0);
+
+            days.forEach(function (_, index) {
+              var scoreCell = document.createElement("div");
+              scoreCell.className = "team-score";
+              scoreCell.textContent = String(scores[index] ?? 0);
+              row.appendChild(scoreCell);
+            });
+
+            var totalCell = document.createElement("div");
+            totalCell.className = "team-total";
+            totalCell.textContent = String(total);
+            row.appendChild(totalCell);
+
+            body.appendChild(row);
           });
         })
         .catch(function () {

@@ -1,0 +1,21 @@
+{
+  "updated": "2025-02-10T00:00:00Z",
+  "title": "Bandon Invitational",
+  "days": ["OM", "BD", "BT"],
+  "teams": [
+    {
+      "name": "LBC",
+      "captain": "Capt. Eric Fickes",
+      "scores": [0, 0, 0],
+      "total": 0,
+      "logo": "img/lbc.png"
+    },
+    {
+      "name": "TST",
+      "captain": "Capt. Josh Jenkins",
+      "scores": [0, 0, 0],
+      "total": 0,
+      "logo": "img/tst.png"
+    }
+  ]
+}
