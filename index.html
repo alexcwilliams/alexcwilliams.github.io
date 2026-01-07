@@ -84,6 +84,11 @@
         radial-gradient(circle at 90% 0%, rgba(181, 43, 70, 0.16), transparent 40%),
         var(--page-bg);
     }
+    /* EDIT NOISE OPACITY - 0 TO 1 */
+    .noise { 
+      background: url(img/noise.svg); filter: contrast(0%) brightness(0%);
+      opacity: 0.5; 
+    }
 
     img {
       max-width: 100%;
@@ -107,39 +112,68 @@
 
     .hero {
       position: relative;
+      overflow: hidden;
       padding: 80px 0 80px;
       text-align: center;
       color: #fff;
-      background-image:
-        linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)),
-        url("img/BD-1.jpg");
-      background-size: cover;
-      background-position: center;
-      animation: hero-rotate 18s infinite;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(63, 94, 251, 0.5), rgba(181, 43, 70, 0.5));
+      z-index: 1;
+      pointer-events: none;
     }
 
     .hero::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: url("img/ghost.png") center/cover no-repeat;
-      opacity: 0.3;
-      mix-blend-mode: screen;
+
+      opacity: 0.2;
       pointer-events: none;
+      z-index: 2;
     }
 
     .hero > .container {
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
 
-    @keyframes hero-rotate {
-      0% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-1.jpg"); }
-      20% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-2.jpg"); }
-      40% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-3.jpg"); }
-      60% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-4.jpg"); }
-      80% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-5.jpg"); }
-      100% { background-image: linear-gradient(135deg, rgba(63, 94, 251, 0.85), rgba(181, 43, 70, 0.85)), url("img/BD-1.jpg"); }
+    .hero-slides {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: left center;
+      opacity: 0;
+      animation: hero-fade 27s infinite;
+    }
+
+    .hero-slide.slide-1 { background-image: url("img/BD-1.jpg"); animation-delay: 0s; }
+    .hero-slide.slide-2 { background-image: url("img/BD-2.jpg"); animation-delay: 3s; }
+    .hero-slide.slide-3 { background-image: url("img/BD-3.jpg"); animation-delay: 6s; }
+    .hero-slide.slide-4 { background-image: url("img/BD-4.jpg"); animation-delay: 9s; }
+    .hero-slide.slide-5 { background-image: url("img/BD-5.jpg"); animation-delay: 12s; }
+    .hero-slide.slide-6 { background-image: url("img/BD-6.jpg"); animation-delay: 15s; }
+    .hero-slide.slide-7 { background-image: url("img/BD-7.jpg"); animation-delay: 18s; }
+    .hero-slide.slide-8 { background-image: url("img/BD-8.jpg"); animation-delay: 21s; }
+    .hero-slide.slide-9 { background-image: url("img/BD-9.jpg"); animation-delay: 24s; }
+    .hero-slide.slide-10 { background-image: url("img/BD-10.jpg"); animation-delay: 27s; }
+
+    @keyframes hero-fade {
+      0% { opacity: 0; }
+      8% { opacity: 1; }
+      18% { opacity: 1; }
+      26% { opacity: 0; }
+      100% { opacity: 0; }
     }
 
     .hero-logo {
@@ -259,15 +293,15 @@
 }
 
 .time-badge {
-      min-width: 76px;
+      min-width: 70px;
       text-align: center;
-      padding: 8px 10px;
+      padding: 8px 6px;
       border-radius: 8px;
       border: 1px solid #c0c0c0;
       background: #ebebeb;
       font-family: "Courier New", Courier, monospace;
-      font-weight: 700;
-      color: #008f00;
+      font-weight: 800;
+      color: #ab3056;
       letter-spacing: 1px;
     }
 
@@ -535,6 +569,18 @@
 <body>
   <div class="page">
     <header class="hero">
+      <div class="hero-slides" aria-hidden="true">
+        <span class="hero-slide slide-1"></span>
+        <span class="hero-slide slide-2"></span>
+        <span class="hero-slide slide-3"></span>
+        <span class="hero-slide slide-4"></span>
+        <span class="hero-slide slide-5"></span>
+        <span class="hero-slide slide-6"></span>
+        <span class="hero-slide slide-7"></span>
+        <span class="hero-slide slide-8"></span>
+        <span class="hero-slide slide-9"></span>
+        <span class="hero-slide slide-10"></span>
+      </div>
       <div class="container">
         <img src="img/B-I.png" alt="Bandon Invitational" class="hero-logo">
         <h1>Itinerary for the 2026 <br />Bandon Invitational</h1>
@@ -556,7 +602,7 @@
       </div>
     </nav>
 
-    <main class="container">
+    <main class="container ">
       <section class="section card schedule-card" id="Wed">
         <a href="https://coursepreview.golf/oldmacdonald/?hole=1" target="_blank" rel="noopener"><img src="img/oldmac.png" alt="Old Macdonald" class="course-logo"></a>
         <h2>Wednesday • 2/12</h2>
