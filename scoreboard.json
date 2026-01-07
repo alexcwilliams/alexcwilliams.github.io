@@ -1,0 +1,15 @@
+{
+  "updated": "2025-02-10T00:00:00Z",
+  "teams": [
+    {
+      "name": "LBC",
+      "score": 0,
+      "logo": "lbc.png"
+    },
+    {
+      "name": "TST",
+      "score": 0,
+      "logo": "tst.png"
+    }
+  ]
+}

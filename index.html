@@ -6,6 +6,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex, nofollow">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=figtree:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
   <title>Bandon Invitational</title>
   <style>
     :root {
@@ -38,6 +40,7 @@
         --shadow-2: 0 6px 16px rgba(0, 0, 0, 0.35);
       }
     }
+    @import url(https://fonts.bunny.net/css?family=figtree:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 
     @font-face {
       font-family: "Circular";
@@ -74,7 +77,7 @@
 
     body {
       margin: 0;
-      font-family: "Circular", "Helvetica Neue", Arial, sans-serif;
+      font-family: 'Figtree', "Helvetica Neue", Arial, sans-serif;
       color: var(--ink);
       background:
         radial-gradient(circle at 10% 10%, rgba(63, 94, 251, 0.12), transparent 55%),
@@ -644,7 +647,7 @@
 
 
       <section class="section card weather-card" id="Wea">
-        <iframe class="weather-iframe" srcdoc='<!doctype html><html><head><style>body{margin:0;padding:0;overflow:hidden;font-family:Arial,sans-serif}</style></head><body><a class="weatherwidget-io" href="https://forecast7.com/en/43d12n124d41/bandon/?unit=us" data-label_1="BANDON" data-label_2="Invitational" data-font="Noto Sans" data-icons="Climacons" data-days="5" data-theme="dark" data-basecolor="#171a20" data-accent="rgba(255, 255, 255, 0.1)">BANDON WEATHER</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");</script></body></html>' title="Bandon Weather" scrolling="no"></iframe>
+        <iframe class="weather-iframe" srcdoc='<!doctype html><html><head><style>body{margin:0;padding:0;overflow:hidden;font-family:Arial,sans-serif}</style></head><body><a class="weatherwidget-io" href="https://forecast7.com/en/43d12n124d41/bandon/?unit=us" data-label_1="BANDON" data-label_2="Invitational" data-font="Noto Sans" data-icons="Climacons" data-days="5" data-theme="clear">BANDON WEATHER</a><script>(function(){var link=document.querySelector(".weatherwidget-io");if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){link.setAttribute("data-theme","dark");link.setAttribute("data-basecolor","#171a20");link.setAttribute("data-accent","rgba(255, 255, 255, 0.1)");}})();</script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");</script></body></html>' title="Bandon Weather" scrolling="no"></iframe>
       </section>
 
       <section class="section card schedule-card" id="Shu">
@@ -708,7 +711,7 @@
       <section class="section card schedule-card">
         <img src="cup.png" alt="Leaderboard" class="course-logo">
         <h2>Real-Time Leaderboard</h2>
-        <div class="leaderboard-grid">
+        <div class="leaderboard-grid" id="leaderboard-grid">
           <div class="leaderboard-team">
             <img src="lbc.png" alt="LBC">
             <div class="leaderboard-score">0</div>
@@ -793,6 +796,54 @@
           closeModal();
         }
       });
+    })();
+  </script>
+  <script>
+    (function () {
+      var grid = document.getElementById("leaderboard-grid");
+
+      if (!grid) {
+        return;
+      }
+
+      fetch("scoreboard.json", { cache: "no-store" })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("Scoreboard fetch failed");
+          }
+          return response.json();
+        })
+        .then(function (data) {
+          if (!data || !Array.isArray(data.teams)) {
+            return;
+          }
+
+          grid.innerHTML = "";
+          data.teams.forEach(function (team) {
+            var teamEl = document.createElement("div");
+            teamEl.className = "leaderboard-team";
+
+            var logo = document.createElement("img");
+            logo.src = team.logo || "";
+            logo.alt = team.name || "Team";
+
+            var score = document.createElement("div");
+            score.className = "leaderboard-score";
+            score.textContent = String(team.score ?? "0");
+
+            var name = document.createElement("div");
+            name.className = "leaderboard-name";
+            name.textContent = team.name || "";
+
+            teamEl.appendChild(logo);
+            teamEl.appendChild(score);
+            teamEl.appendChild(name);
+            grid.appendChild(teamEl);
+          });
+        })
+        .catch(function () {
+          // Keep the static fallback if the fetch fails.
+        });
     })();
   </script>
 </body>
