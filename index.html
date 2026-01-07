@@ -6,7 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex, nofollow">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <title>Bandon Classic</title>
+  <title>Bandon Invitational</title>
   <style>
     :root {
       color-scheme: light;
@@ -104,7 +104,7 @@
 
     .hero {
       position: relative;
-      padding: 90px 0 90px;
+      padding: 80px 0 80px;
       text-align: center;
       color: #fff;
       background-image:
@@ -120,7 +120,7 @@
       position: absolute;
       inset: 0;
       background: url("ghost.png") center/cover no-repeat;
-      opacity: 0.22;
+      opacity: 0.3;
       mix-blend-mode: screen;
       pointer-events: none;
     }
@@ -140,12 +140,12 @@
     }
 
     .hero-logo {
-      width: 170px;
-      margin: 0 auto 20px;
+      width: 280px;
+      margin: 0 auto 10px;
     }
 
     .hero h1 {
-      margin: 10px 0 0;
+      margin: 4px 0 0 0;
       font-size: clamp(26px, 3.2vw, 36px);
       font-weight: 700;
       letter-spacing: 0.6px;
@@ -164,7 +164,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 14px;
-      padding: 12px 18px;
+      padding: 14px 18px 10px;
       border-radius: 999px;
       background: linear-gradient(120deg, var(--accent), var(--accent-2));
       color: #fff;
@@ -173,9 +173,9 @@
     }
 
     .quick-nav a {
-      font-weight: 600;
-      letter-spacing: 1px;
-      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.25px;
+      font-size: 15px;
     }
 
     .section {
@@ -282,9 +282,10 @@
 
     .weather-iframe {
       width: 100%;
-      height: 190px;
+      height: 214px;
       border: 0;
       display: block;
+      align-items: center;
     }
 
     .cta {
@@ -462,14 +463,21 @@
     }
 
     .leaderboard-team img {
-      width: 70px;
+      width: 100px;
       margin: 0 auto 12px;
       border-radius: 999px;
       border: 1px solid #eeeeee;
     }
 
     .leaderboard-score {
-      font-size: 22px;
+      padding-top: 10px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .leaderboard-name {
+      font-size: 18px;
+      padding-top: 10px;
       font-weight: 700;
     }
 
@@ -525,8 +533,8 @@
   <div class="page">
     <header class="hero">
       <div class="container">
-        <img src="bandonclassic-white.png" alt="Bandon Classic" class="hero-logo">
-        <h1>Itinerary for the 2026 Bandon Invitational</h1>
+        <img src="b-i.png" alt="Bandon Classic" class="hero-logo">
+        <h1>Itinerary for the 2026 <br />Bandon Invitational</h1>
       </div>
     </header>
 
@@ -537,9 +545,10 @@
           <a href="#Thu">THU</a>
           <a href="#Fri">FRI</a>
           <a href="#Sat">SAT</a>
-          <a href="#Wea">🌦️</a>
-          <a href="#Shu">🚐</a>
-          <a href="#Din">🍽️</a>
+          <a href="">•</a>
+          <a href="#Wea">WTHR</a>
+          <a href="#Shu">RIDE</a>
+          <a href="#Din">EAT</a>
         </div>
       </div>
     </nav>
@@ -635,7 +644,7 @@
 
 
       <section class="section card weather-card" id="Wea">
-        <iframe class="weather-iframe" srcdoc='<!doctype html><html><head><style>body{margin:0;padding:0;overflow:hidden;font-family:Arial,sans-serif}</style></head><body><a class="weatherwidget-io" href="https://forecast7.com/en/43d12n124d41/bandon/?unit=us" data-label_1="BANDON" data-label_2="CLASSIC" data-font="Noto Sans" data-icons="Climacons" data-days="5" data-theme="dark" data-basecolor="#171a20" data-accent="rgba(255, 255, 255, 0.1)">BANDON WEATHER</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");</script></body></html>' title="Bandon Weather" scrolling="no"></iframe>
+        <iframe class="weather-iframe" srcdoc='<!doctype html><html><head><style>body{margin:0;padding:0;overflow:hidden;font-family:Arial,sans-serif}</style></head><body><a class="weatherwidget-io" href="https://forecast7.com/en/43d12n124d41/bandon/?unit=us" data-label_1="BANDON" data-label_2="Invitational" data-font="Noto Sans" data-icons="Climacons" data-days="5" data-theme="dark" data-basecolor="#171a20" data-accent="rgba(255, 255, 255, 0.1)">BANDON WEATHER</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");</script></body></html>' title="Bandon Weather" scrolling="no"></iframe>
       </section>
 
       <section class="section card schedule-card" id="Shu">
@@ -701,12 +710,14 @@
         <h2>Real-Time Leaderboard</h2>
         <div class="leaderboard-grid">
           <div class="leaderboard-team">
-            <img src="deep.png" alt="Balls Deep">
+            <img src="lbc.png" alt="LBC">
             <div class="leaderboard-score">0</div>
+            <div class="leaderboard-name">LBC</div>
           </div>
           <div class="leaderboard-team">
-            <img src="cb4.png" alt="Cannonball 4">
+            <img src="tst.png" alt="TST">
             <div class="leaderboard-score">0</div>
+            <div class="leaderboard-name">TST</div>
           </div>
         </div>
       </section>
