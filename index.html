@@ -537,9 +537,9 @@
     .scoreboard-team {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: minmax(8rem, 1fr) 5rem;
+      grid-template-columns: minmax(10rem, 1fr) 5rem;
       align-items: center;
-      padding: 0.5rem 0 1rem;
+      padding: 1rem .1rem;
       border-bottom: 1px solid var(--line);
     }
 
@@ -551,14 +551,12 @@
       padding: 0 0.5rem;
       padding-right: 2rem;
       display: grid;
-      grid-template-rows: auto .5fr;
-      grid-template-columns: 3.5rem 1fr;
+      grid-template-columns: 4.5rem 1fr;
       align-items: center;
     }
 
     .team-logo {
       grid-column: 1 / span 1;
-      grid-row: 1 / span 2;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -566,31 +564,35 @@
     }
 
     .team-logo img {
-      width: 42px;
-      height: 42px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       border: 1px solid #d5d1e4;
       object-fit: cover;
       background: #fff;
     }
 
-    .team-name {
+    .team-text {
       grid-column: 2 / span 1;
-      grid-row: 1 /;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
       padding-left: 0.75rem;
       text-align: left;
+    }
+
+    .team-name {
       font-weight: 700;
       color: #4b4b53;
       font-size: 1rem;
+      line-height: 1.1;
     }
 
     .team-captain {
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
-      padding-left: 0.75rem;
-      text-align: left;
       color: #7a7a84;
       font-size: .75rem;
+      line-height: 1.1;
     }
 
     .team-score {
@@ -610,7 +612,7 @@
 
     @media only screen and (min-width: 500px) {
       .scoreboard {
-        grid-template-columns: minmax(8rem, 1fr) repeat(3, 2rem) 5rem;
+        grid-template-columns: minmax(12rem, 1fr) repeat(3, 2rem) 5rem;
       }
 
       .scoreboard-title {
@@ -639,7 +641,7 @@
       }
 
       .scoreboard-team {
-        grid-template-columns: minmax(8rem, 1fr) repeat(3, 2rem) 5rem;
+        grid-template-columns: minmax(12rem, 1fr) repeat(3, 2rem) 5rem;
       }
 
       .team-details {
@@ -702,6 +704,30 @@
 
       .team-total {
         font-size: 1.5rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .scoreboard-title,
+      .scoreboard-quarters span,
+      .scoreboard-total {
+        color: #c7c9d3;
+      }
+
+      .team-name {
+        color: #e9eaf1;
+      }
+
+      .team-captain {
+        color: #c3c6d2;
+      }
+
+      .team-score {
+        color: #c3c6d2;
+      }
+
+      .team-total {
+        color: #e1e3ec;
       }
     }
 
@@ -917,8 +943,10 @@
                 <div class="team-logo">
                   <img src="img/lbc.png" alt="LBC">
                 </div>
-                <div class="team-name">LBC</div>
-                <div class="team-captain">Capt. Eric Fickes</div>
+                <div class="team-text">
+                  <div class="team-name">LBC</div>
+                  <div class="team-captain">Capt. Eric Fickes</div>
+                </div>
               </div>
               <div class="team-score">0</div>
               <div class="team-score">0</div>
@@ -930,8 +958,10 @@
                 <div class="team-logo">
                   <img src="img/tst.png" alt="TST">
                 </div>
-                <div class="team-name">TST</div>
-                <div class="team-captain">Capt. Josh Jenkins</div>
+                <div class="team-text">
+                  <div class="team-name">TST</div>
+                  <div class="team-captain">Capt. Josh Jenkins</div>
+                </div>
               </div>
               <div class="team-score">0</div>
               <div class="team-score">0</div>
@@ -1070,10 +1100,14 @@
             captain.className = "team-captain";
             captain.textContent = team.captain || "";
 
+            var textWrap = document.createElement("div");
+            textWrap.className = "team-text";
+            textWrap.appendChild(teamName);
+            textWrap.appendChild(captain);
+
             logoWrap.appendChild(logo);
             details.appendChild(logoWrap);
-            details.appendChild(teamName);
-            details.appendChild(captain);
+            details.appendChild(textWrap);
             row.appendChild(details);
 
             var scores = Array.isArray(team.scores) ? team.scores : [];
