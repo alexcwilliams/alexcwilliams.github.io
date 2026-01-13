@@ -7,15 +7,33 @@
       "name": "LBC",
       "captain": "Capt. Eric Fickes",
       "scores": [0, 0, 0],
-      "total": 0,
       "logo": "img/lbc.png"
     },
     {
       "name": "TST",
       "captain": "Capt. Josh Jenkins",
       "scores": [0, 0, 0],
-      "total": 0,
       "logo": "img/tst.png"
+    }
+  ],
+  "teamScoreboards": [
+    {
+      "title": "Leaf Blower Collective",
+      "players": [
+        { "first": "Eric", "last": "Fickes", "scores": [0, 0, 0]},
+        { "first": "Alex", "last": "Williams", "scores": [0, 0, 0]},
+        { "first": "Big City", "last": "Skulina", "scores": [0, 0, 0]},
+        { "first": "Steve", "last": "Foerstner", "scores": [0, 0, 0]}
+      ]
+    },
+    {
+      "title": "Theseus String Theory",
+      "players": [
+        { "first": "Josh", "last": "Jenkins", "scores": [0, 0, 0]},
+        { "first": "Broku", "last": "Sanders", "scores": [0, 0, 0]},
+        { "first": "Jeff", "last": "Shoemaker", "scores": [0, 0, 0]},
+        { "first": "Mike", "last": "Towle", "scores": [0, 0, 0]}
+      ]
     }
   ]
 }

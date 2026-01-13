@@ -511,6 +511,7 @@
       color: var(--muted);
       font-size: 0.78rem;
       letter-spacing: 0.12em;
+      font-weight: 600;
     }
 
     .scoreboard-quarters {
@@ -532,6 +533,12 @@
 
     .scoreboard-body {
       grid-column: 1 / -1;
+    }
+
+    .team-scoreboards {
+      margin-top: 18px;
+      display: grid;
+      gap: 16px;
     }
 
     .scoreboard-team {
@@ -572,6 +579,10 @@
       background: #fff;
     }
 
+    .team-logo img.is-hidden {
+      visibility: hidden;
+    }
+
     .team-text {
       grid-column: 2 / span 1;
       display: flex;
@@ -610,7 +621,7 @@
       color: #8b8b96;
     }
 
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 480px) {
       .scoreboard {
         grid-template-columns: minmax(12rem, 1fr) repeat(3, 2rem) 5rem;
       }
@@ -704,6 +715,23 @@
 
       .team-total {
         font-size: 1.5rem;
+      }
+
+      .scoreboard-title[data-short]::after {
+        content:   attr(data-short);
+      }
+
+      .scoreboard-title[data-short] {
+        color: transparent;
+        position: relative;
+      }
+
+      .scoreboard-title[data-short]::after {
+        color: var(--muted);
+        position: absolute;
+        inset: 0 1rem 0 1.3rem;
+        display: flex;
+        align-items: center;
       }
     }
 
@@ -970,6 +998,7 @@
             </div>
           </div>
         </div>
+        <div class="team-scoreboards" id="team-scoreboards"></div>
       </section>
 
       <section class="section card faq" id="FAQ">
@@ -1129,6 +1158,115 @@
 
             body.appendChild(row);
           });
+
+          var teamBoards = document.getElementById("team-scoreboards");
+          if (teamBoards && Array.isArray(data.teamScoreboards)) {
+            teamBoards.innerHTML = "";
+            data.teamScoreboards.forEach(function (board) {
+              var boardEl = document.createElement("div");
+              boardEl.className = "scoreboard";
+
+              var titleEl = document.createElement("div");
+              titleEl.className = "scoreboard-title";
+              titleEl.textContent = board.title || "Team";
+
+              var shortTitle = board.short;
+              if (!shortTitle && board.title) {
+                shortTitle = board.title
+                  .split(/\s+/)
+                  .map(function (word) { return word.slice(0, 1); })
+                  .join("")
+                  .toUpperCase();
+              }
+              if (shortTitle) {
+                titleEl.setAttribute("data-short", shortTitle);
+              }
+
+              var quartersEl = document.createElement("div");
+              quartersEl.className = "scoreboard-quarters";
+              days.forEach(function (day) {
+                var dayCell = document.createElement("span");
+                dayCell.textContent = day;
+                quartersEl.appendChild(dayCell);
+              });
+
+              var totalLabel = document.createElement("div");
+              totalLabel.className = "scoreboard-total";
+              totalLabel.textContent = "T";
+
+              var bodyEl = document.createElement("div");
+              bodyEl.className = "scoreboard-body";
+
+              boardEl.appendChild(titleEl);
+              boardEl.appendChild(quartersEl);
+              boardEl.appendChild(totalLabel);
+              boardEl.appendChild(bodyEl);
+
+              var players = Array.isArray(board.players) ? board.players : [];
+              players.forEach(function (player) {
+                var rowEl = document.createElement("div");
+                rowEl.className = "scoreboard-team";
+
+                var detailsEl = document.createElement("div");
+                detailsEl.className = "team-details";
+
+                var logoWrap = document.createElement("div");
+                logoWrap.className = "team-logo";
+
+                var avatar = document.createElement("img");
+                var firstName = (player.first || "").trim();
+                var slug = firstName.toLowerCase().replace(/\s+/g, "-");
+                var avatarPath = player.avatar || (slug ? ("avatars/" + slug + ".png") : "");
+
+                avatar.alt = (player.first || "Player") + " " + (player.last || "");
+                if (avatarPath) {
+                  avatar.src = avatarPath;
+                } else {
+                  avatar.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+                  avatar.classList.add("is-hidden");
+                }
+
+                var textWrap = document.createElement("div");
+                textWrap.className = "team-text";
+
+                var nameEl = document.createElement("div");
+                nameEl.className = "team-name";
+                nameEl.textContent = player.first || "";
+
+                var lastEl = document.createElement("div");
+                lastEl.className = "team-captain";
+                lastEl.textContent = player.last || "";
+
+                textWrap.appendChild(nameEl);
+                textWrap.appendChild(lastEl);
+                logoWrap.appendChild(avatar);
+                detailsEl.appendChild(logoWrap);
+                detailsEl.appendChild(textWrap);
+                rowEl.appendChild(detailsEl);
+
+                var scores = Array.isArray(player.scores) ? player.scores : [];
+                var total = scores.reduce(function (sum, value) {
+                  return sum + (typeof value === "number" ? value : 0);
+                }, 0);
+
+                days.forEach(function (_, index) {
+                  var scoreCell = document.createElement("div");
+                  scoreCell.className = "team-score";
+                  scoreCell.textContent = String(scores[index] ?? 0);
+                  rowEl.appendChild(scoreCell);
+                });
+
+                var totalCell = document.createElement("div");
+                totalCell.className = "team-total";
+                totalCell.textContent = String(total);
+                rowEl.appendChild(totalCell);
+
+                bodyEl.appendChild(rowEl);
+              });
+
+              teamBoards.appendChild(boardEl);
+            });
+          }
         })
         .catch(function () {
           // Keep the static fallback if the fetch fails.
