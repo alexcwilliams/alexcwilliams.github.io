@@ -30,9 +30,9 @@
       "title": "Theseus String Theory",
       "players": [
         { "first": "Josh", "last": "Jenkins", "scores": [3, 1, 0]},
-        { "first": "Broku", "last": "Sanders", "scores": [2, 1, 0]},
+        { "first": "Broku", "last": "Sanders", "scores": [2, 1.5, 0]},
         { "first": "Jeff", "last": "Shoemaker", "scores": [3.5, 0, 0]},
-        { "first": "Mike", "last": "Towle", "scores": [2.5, 6, 0]}
+        { "first": "Mike", "last": "Towle", "scores": [2.5, 5.5, 0]}
       ]
     }
   ]
