@@ -20,19 +20,19 @@
     {
       "title": "Leaf Blower Collective",
       "players": [
-        { "first": "Eric", "last": "Fickes", "scores": [0, 0, 0]},
-        { "first": "Alex", "last": "Williams", "scores": [0, 0, 0]},
-        { "first": "Big City", "last": "Skulina", "scores": [0, 0, 0]},
-        { "first": "Steve", "last": "Foerstner", "scores": [0, 0, 0]}
+        { "first": "Eric", "last": "Fickes", "scores": [3, 0, 0]},
+        { "first": "Alex", "last": "Williams", "scores": [3, 0, 0]},
+        { "first": "Big City", "last": "Skulina", "scores": [1, 0, 0]},
+        { "first": "Steve", "last": "Foerstner", "scores": [1, 0, 0]}
       ]
     },
     {
       "title": "Theseus String Theory",
       "players": [
-        { "first": "Josh", "last": "Jenkins", "scores": [0, 0, 0]},
-        { "first": "Broku", "last": "Sanders", "scores": [0, 0, 0]},
-        { "first": "Jeff", "last": "Shoemaker", "scores": [0, 0, 0]},
-        { "first": "Mike", "last": "Towle", "scores": [0, 0, 0]}
+        { "first": "Josh", "last": "Jenkins", "scores": [3, 0, 0]},
+        { "first": "Broku", "last": "Sanders", "scores": [2, 0, 0]},
+        { "first": "Jeff", "last": "Shoemaker", "scores": [3.5, 0, 0]},
+        { "first": "Mike", "last": "Towle", "scores": [2.5, 0, 0]}
       ]
     }
   ]
